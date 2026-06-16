@@ -1,4 +1,6 @@
-# 12-lead ECG Multi-label Classification 🫀
+# AXIS: Attention-based eXplainable Network for Class Imbalance using Swin Transformer in 12-Lead ECG Multi-Label Classification
+
+# Task: 12-lead ECG Multi-label Classification 🫀
 
 A research repository for **multi-label cardiac diagnosis** from 12-lead ECG signals using the **PTB-XL dataset** [1]. This project covers the full pipeline: rigorous data exploration, label-imbalance-aware loss design, and a proposed parameter-efficient Swin Transformer architecture tailored to the temporal structure of ECG signals.
 
@@ -24,13 +26,13 @@ The result is a model that is better calibrated across the full diagnostic label
 
 ---
 
-## 🧠 Proposed Architecture: `lg_ecg`
+## 🧠 Proposed Architecture: `AXIS`
 
 ### Design Motivation
 
 Convolutional models like ResNet and ConvNeXt process ECG signals with **fixed local receptive fields**, making them inherently limited in capturing long-range cardiac patterns (e.g., inter-beat rhythm, PR interval drift).
 
-We propose LG-ECG, adapting the **Swin Transformer** [2] to 1D ECG sequences with two key design principles:
+We propose **AXIS**, adapting the **Swin Transformer** [2] to 1D ECG sequences with two key design principles:
 
 ### Architectural Novelty
 
