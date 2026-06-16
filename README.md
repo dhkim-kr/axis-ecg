@@ -137,8 +137,8 @@ To understand *where* TwoWayLoss makes a difference, we visualize per-class F1 s
   <td align="center"><b>Config (Stage1=4, Stage2=2)</b><br>644K params</td>
 </tr>
 <tr>
-  <td><img src="loss_comparison_classwise_f1 (1).png" alt="Class-wise F1 (4,1)"></td>
-  <td><img src="loss_comparison_classwise_f1.png" alt="Class-wise F1 (4,2)"></td>
+  <td><img src="loss_comparison_classwise_f1.png" alt="Class-wise F1 (4,1)"></td>
+  <td><img src="loss_comparison_classwise_f1 (1).png" alt="Class-wise F1 (4,2)"></td>
 </tr>
 </table>
 
