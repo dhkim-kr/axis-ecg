@@ -7,21 +7,6 @@ A research repository for **multi-label cardiac diagnosis** from 12-lead ECG sig
 
 ---
 
-## 🔬 Exploratory Data Analysis — `EDA_ptbxl.ipynb`
-
-> Before any model was trained, a **thorough 4-part EDA** was conducted to ensure sound modeling decisions.
-
-| Part | Focus | Key Finding |
-|:----:|:------|:------------|
-| **1** | Dataset Overview & Label Meta-Analysis | Identified severe **class imbalance** across 23 diagnostic labels — rare conditions appear in <1% of samples, motivating the use of `TwoWayLoss` |
-| **2** | Raw Signal Inspection & Null Validation | Discovered **16 fully corrupted (`"null"`) JSON files** in the raw PTB-XL data; implemented graceful fallback replacement to prevent DataLoader crashes |
-| **3** | Frequency-Domain Analysis (PSD, Harmonics) | The recurring 50Hz spectral bump is attributable to **baseline signal movement, not powerline interference** — ruling out Notch filtering as a preprocessing step |
-| **4** | Signal Preprocessing Comparison | Validated that **Z-Score Normalization** preserves clinically relevant signal morphology better than amplitude clipping or bandpass filtering |
-
-These findings directly shaped every design decision downstream.
-
----
-
 ## 💡 Motivation: Why TwoWayLoss?
 
 Standard **Binary Cross-Entropy (BCE)** treats each label independently with a uniform 50/50 positive/negative assumption. In PTB-XL, however, label distribution is heavily skewed:
@@ -39,13 +24,13 @@ The result is a model that is better calibrated across the full diagnostic label
 
 ---
 
-## 🧠 Proposed Architecture: `swin1d_ecg`
+## 🧠 Proposed Architecture: `lg_ecg`
 
 ### Design Motivation
 
 Convolutional models like ResNet and ConvNeXt process ECG signals with **fixed local receptive fields**, making them inherently limited in capturing long-range cardiac patterns (e.g., inter-beat rhythm, PR interval drift).
 
-We propose adapting the **Swin Transformer** [2] to 1D ECG sequences with two key design principles:
+We propose LG-ECG, adapting the **Swin Transformer** [2] to 1D ECG sequences with two key design principles:
 
 ### Architectural Novelty
 
