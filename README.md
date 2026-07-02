@@ -5,7 +5,7 @@
 A research repository for **multi-label cardiac diagnosis** from 12-lead ECG signals using the **PTB-XL dataset** [1]. This project covers the full pipeline: rigorous data exploration, label-imbalance-aware loss design, and a proposed parameter-efficient Swin Transformer architecture tailored to the temporal structure of ECG signals.
 
 ## 🏗️ Model Architecture
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/c8b537de-9a76-4446-b810-a42579b27641" />
+<img width="1024" height="559" alt="image" src="https://github.com/Neuro-AI-Lab/AXIS/model.png" />
 
 ---
 
