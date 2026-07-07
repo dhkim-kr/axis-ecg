@@ -187,7 +187,7 @@ Top 5 performers across all standard baselines (reproduced):
 
 ### 5. PTB-XL Benchmark (Macro-AUROC vs. Published Baselines)
 
-| Model | AUC ↓ | Source | Code |
+| Model | AUC ↑ | Source | Code |
 |:------|:-----:|:------:|:----:|
 | **swin1d_ecg (4,2) + TwoWay** | **0.933(08)** | [our work](https://github.com/hyuki0003/12lead_ecg_multi-label_classification/tree/main) | [this repo](https://github.com/hyuki0003/12lead_ecg_multi-label_classification/tree/main) |
 | inception1d [2] | 0.930(10) | [ptbxl_benchmark](https://github.com/helme/ecg_ptbxl_benchmarking) | [ptbxl_benchmark](https://github.com/helme/ecg_ptbxl_benchmarking) |
