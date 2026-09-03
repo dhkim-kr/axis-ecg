@@ -1,0 +1,45 @@
+# AXIS research workspace
+
+# Environment
+*.pyc
+__pycache__/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Editor / IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Data and run outputs (development-only; see CLAUDE.md repository layout)
+/data/
+/experiments/runs/
+/runs/
+wandb/
+*.log
+
+# Personal settings (contain GitHub / Zotero / Overleaf tokens) — never commit
+.claude/settings.local.json
+
+# Overleaf clones are nested git repos synced by .claude/scripts/overleaf_sync.sh
+docs/paper*/
+
+# Per-user agent state and memory; the distribution ships .example / template seeds
+.claude/state/handoff.json
+.claude/agent-memory/
+.claude/runs/
+
+# Local scratch
+/scratch/
+/.local/
