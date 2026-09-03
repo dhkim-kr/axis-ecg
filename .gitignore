@@ -85,3 +85,7 @@ nohup.out
 /tmp/
 /.local/
 *.tmp
+
+# Development-only planning and research record (CLAUDE.md repository layout)
+/plan/
+/report/
