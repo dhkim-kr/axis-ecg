@@ -1,34 +1,87 @@
-# Claude Code agent system (local orchestration workspace, not part of AXIS)
+# ---- AI agent workspaces (local tooling, not part of AXIS) ----
 .claude/
 .mcp.json
 CLAUDE.md
+.codex/
+.cursor/
+.orchestration/
 
-# Overleaf clone (nested git repo)
+# ---- Paper drafts: Overleaf clones are nested git repos ----
 docs/paper*/
 
-# Python / environment
+# ---- Python ----
 __pycache__/
-*.pyc
-.env
+*.py[cod]
 *.egg-info/
+build/
+dist/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
-# Editor / OS
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+conda-env/
+
+# ---- Secrets and local config ----
+.env
+.env.*
+*.pem
+*.key
+secrets*/
+config.local.*
+
+# ---- Editor / OS ----
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
 .DS_Store
+Thumbs.db
 
-# Model checkpoints and weights
+# ---- Model checkpoints and weights ----
 *.pt
 *.pth
 *.ckpt
 *.bin
 *.safetensors
+*.onnx
+checkpoints/
+weights/
 
-# Data and run outputs
+# ---- Datasets and large binary arrays ----
 /data/
+/datasets/
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.parquet
+*.mat
+
+# ---- Experiment outputs and logs ----
 /experiments/runs/
 /runs/
+/results/
+/outputs/
+/logs/
 wandb/
+mlruns/
+lightning_logs/
+tensorboard/
 *.log
+slurm-*.out
+nohup.out
+
+# ---- Scratch / temp ----
+/scratch/
+/tmp/
+/.local/
+*.tmp
