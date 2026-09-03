@@ -89,3 +89,6 @@ nohup.out
 # Development-only planning and research record (CLAUDE.md repository layout)
 /plan/
 /report/
+
+# Status report for the authors (local, not part of the release)
+/report.md
