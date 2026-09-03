@@ -1,15 +1,19 @@
-# AXIS research workspace
+# Claude Code agent system (local orchestration workspace, not part of AXIS)
+.claude/
+.mcp.json
+CLAUDE.md
 
-# Environment
-*.pyc
+# Overleaf clone (nested git repo)
+docs/paper*/
+
+# Python / environment
 __pycache__/
+*.pyc
 .env
 *.egg-info/
-dist/
-build/
 .pytest_cache/
 
-# Editor / IDE / OS
+# Editor / OS
 .vscode/
 .idea/
 *.swp
@@ -22,24 +26,9 @@ build/
 *.bin
 *.safetensors
 
-# Data and run outputs (development-only; see CLAUDE.md repository layout)
+# Data and run outputs
 /data/
 /experiments/runs/
 /runs/
 wandb/
 *.log
-
-# Personal settings (contain GitHub / Zotero / Overleaf tokens) — never commit
-.claude/settings.local.json
-
-# Overleaf clones are nested git repos synced by .claude/scripts/overleaf_sync.sh
-docs/paper*/
-
-# Per-user agent state and memory; the distribution ships .example / template seeds
-.claude/state/handoff.json
-.claude/agent-memory/
-.claude/runs/
-
-# Local scratch
-/scratch/
-/.local/
