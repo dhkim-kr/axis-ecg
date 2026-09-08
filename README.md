@@ -1,5 +1,12 @@
 # AXIS
 
+## Status
+
+| Item | Status |
+|---|---|
+| Research | BSPC submission planned · September 8, 2026 |
+| Implementation | Model and loss available; standalone training and checkpoints: **To be uploaded** |
+
 **A compact local-then-global one-dimensional Swin transformer with a two-way multi-label loss for long-tailed 12-lead ECG diagnosis**
 
 Dae Hyeon Kim and Dong-Hyuk Lee (equal contribution), Young-Seok Choi.
@@ -23,7 +30,7 @@ AXIS processes 10-second, 12-lead ECGs with two attention stages. A patch size o
 
 ## Results
 
-Table 4 of the supplied manuscript: PTB-XL test fold 10, bootstrap means over 1,000 resamples. These are reported manuscript results, not new experiments. `(L, G)` denotes local and global block counts.
+PTB-XL test fold 10; bootstrap means over 1,000 resamples. `(L, G)` denotes local and global block counts.
 
 | Model | Loss | Parameters | Macro AUROC | Macro AUPRC | F-max |
 |---|---|---:|---:|---:|---:|
