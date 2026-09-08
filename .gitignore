@@ -1,0 +1,94 @@
+# ---- AI agent workspaces (local tooling, not part of AXIS) ----
+.claude/
+.mcp.json
+CLAUDE.md
+.codex/
+.cursor/
+.orchestration/
+
+# ---- Paper drafts: Overleaf clones are nested git repos ----
+docs/paper*/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+conda-env/
+
+# ---- Secrets and local config ----
+.env
+.env.*
+*.pem
+*.key
+secrets*/
+config.local.*
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Model checkpoints and weights ----
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+checkpoints/
+weights/
+
+# ---- Datasets and large binary arrays ----
+/data/
+/datasets/
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.parquet
+*.mat
+
+# ---- Experiment outputs and logs ----
+/experiments/runs/
+/runs/
+/results/
+/outputs/
+/logs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+slurm-*.out
+nohup.out
+
+# ---- Scratch / temp ----
+/scratch/
+/tmp/
+/.local/
+*.tmp
+
+# Development-only planning and research record (CLAUDE.md repository layout)
+/plan/
+/report/
+
+# Status report for the authors (local, not part of the release)
+/report.md
